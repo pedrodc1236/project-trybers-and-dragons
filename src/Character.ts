@@ -44,20 +44,6 @@ export default class Character implements Fighter {
     enemy.receiveDamage(this._strength);
   }
 
-  levelUp(): void {
-    this._maxLifePoints += getRandomInt(1, 10);
-    this._strength += getRandomInt(1, 10);
-    this._dexterity += getRandomInt(1, 10);
-    this._defense += getRandomInt(1, 10);
-    this._energy.amount = 10;
-
-    if (this._maxLifePoints > this._race.maxLifePoints) {
-      this._maxLifePoints = this._race.maxLifePoints;
-    }
-
-    this._lifePoints = this._maxLifePoints;
-  }
-
   special(enemy: SimpleFighter): void {
     const thunderstorm = getRandomInt(10, 20) + this._strength;
 
@@ -98,5 +84,19 @@ export default class Character implements Fighter {
       type_: this._energy.type_, 
       amount: this._energy.amount,
     };
+  }
+
+  levelUp(): void {
+    this._maxLifePoints += getRandomInt(1, 10);
+    this._strength += getRandomInt(1, 10);
+    this._dexterity += getRandomInt(1, 10);
+    this._defense += getRandomInt(1, 10);
+    this._energy.amount = 10;
+
+    if (this._maxLifePoints > this._race.maxLifePoints) {
+      this._maxLifePoints = this._race.maxLifePoints;
+    }
+
+    this._lifePoints = this._maxLifePoints;
   }
 }

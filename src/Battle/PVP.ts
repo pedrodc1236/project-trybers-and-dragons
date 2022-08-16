@@ -4,7 +4,6 @@ import Battle from './Battle';
 export default class PVP extends Battle {
   constructor(private _player1: Fighter, private _player2: Fighter) {
     super(_player1);
-    this.fight();
   }
 
   fight(): number {
