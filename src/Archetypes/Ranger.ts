@@ -1,5 +1,5 @@
 import { EnergyType } from '../Energy';
-import Archetype from './Archetypes';
+import Archetype from './Archetype';
 
 export default class Ranger extends Archetype {
   private _energytype: EnergyType;

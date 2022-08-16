@@ -1,5 +1,5 @@
 import { EnergyType } from '../Energy';
-import Archetype from './Archetypes';
+import Archetype from './Archetype';
 
 export default class Necromancer extends Archetype {
   private _energyType: EnergyType;

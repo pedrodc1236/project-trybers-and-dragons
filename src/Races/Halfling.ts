@@ -7,12 +7,8 @@ export default class Halfling extends Race {
   constructor(name: string, dexterity: number) { 
     super(name, dexterity);
     
-    Halfling.addInstances();
-    this._maxLifePoints = 60;
-  }
-
-  static addInstances() {
     Halfling.instancesCount += 1;
+    this._maxLifePoints = 60;
   }
 
   get maxLifePoints() {

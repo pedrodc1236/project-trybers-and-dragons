@@ -7,12 +7,8 @@ export default class Orc extends Race {
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
 
-    Orc.addInstances();
-    this._maxLifePoints = 74;
-  }
-
-  static addInstances() {
     Orc.instancesCount += 1;
+    this._maxLifePoints = 74;
   }
 
   get maxLifePoints(): number {

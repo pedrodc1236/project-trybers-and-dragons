@@ -4,7 +4,6 @@ import Battle from './Battle';
 export default class PVE extends Battle {
   constructor(private _player: Fighter, private arrayEnemys: SimpleFighter[]) { 
     super(_player);
-    this.fight();
   }
 
   helpFunction(i: number): number {
