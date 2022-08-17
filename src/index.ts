@@ -3,9 +3,9 @@ import Character from './Character';
 import Dragon from './Dragon';
 import Monster from './Monster';
 
-const player1 = new Character('player1');
-const player2 = new Character('player2');
-const player3 = new Character('player3');
+const player1 = new Character('Player One');
+const player2 = new Character('Player Two');
+const player3 = new Character('Player Three');
 
 player1.levelUp();
 player1.levelUp();
