@@ -30,6 +30,7 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
   ```
   cd projetos
   ```
+  ```
   git clone git@github.com:pedrodc1236/project-trybers-and-dragons.git
   ```
   
@@ -37,6 +38,7 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
 
   ```
   cd project-trybers-and-dragons
+  ```
   ```
   npm install
   ```
