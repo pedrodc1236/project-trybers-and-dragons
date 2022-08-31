@@ -31,10 +31,11 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
   cd projetos
   ```
   git clone git@github.com:pedrodc1236/project-trybers-and-dragons.git
+  ```
   
 3. Acesse o diretório do projeto e depois utilize o comando **npm install** para instalar todas as dependências necessárias:
   ```
   cd project-trybers-and-dragons
   ```
   npm install
-
+  ```
